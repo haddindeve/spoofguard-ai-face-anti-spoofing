@@ -1,0 +1,39 @@
+# SpoofGuard - Face Anti-Spoofing and Liveness Detection
+
+> Real-time presentation attack detection separating a live face from a photo, screen or mask.
+
+Author: Muhammad Tanveer (Full-Stack AI Automation Engineer)
+Contact: mtanveertahir66@gmail.com | https://www.linkedin.com/in/muhammad-tanveer-advenno/
+Repository: https://github.com/haddindeve/spoofguard-ai-face-anti-spoofing
+Source availability: implementation held in a private repository; access on request.
+
+## Summary
+Face recognition answers whether a face matches, not whether it is a real face. Without liveness detection, a printed photo or a phone screen defeats the system entirely.
+
+A trained model that classifies presentation attacks in real time from the camera stream, distinguishing a live face from print, replay and mask attacks. It sits in front of recognition so a spoofed input is rejected before identity is ever considered.
+
+## Stack
+Vision: Deep learning classification models, Runtime: Real-time inference, Interface: JavaScript demonstration application, Models: Packaged trained weights
+
+## Capabilities
+- Real-time liveness classification
+- Print, replay and mask attack detection
+- Pre-recognition rejection of spoofed input
+- Packaged trained models
+
+## Outcomes
+- Recognition protected against the attacks it cannot detect itself
+- Classification fast enough to run in the live capture path
+
+## FAQ
+Q: What is a presentation attack?
+A: Presenting something other than a live face - a printed photo, a video on a screen, or a mask - to fool a face recognition system.
+
+Q: Why is liveness separate from recognition?
+A: Recognition only answers whether two faces match. Liveness answers whether the input is a real person at all.
+
+Q: Does it run in real time?
+A: Yes - classification happens in the live capture path, before recognition.
+
+Q: Is the source available?
+A: Private repository.
